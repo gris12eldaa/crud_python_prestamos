@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Configuración de la base de datos PostgreSQL
-SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://root:3euzgylJZMZoTv7YbLPwNQqzyFxc5QEe@dpg-cvs8bauuk2gs739os6d0-a.oregon-postgres.render.com:5432/baseprueba_68wt"
+SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://root:zlcnGGtzHExFzULMlTcT5e3vHr21Aur4@dpg-cvsa4tc9c44c739t6ueg-a.oregon-postgres.render.com/baseprueba_v8i8"
 
 # Crear el engine
 engine = create_engine(SQLALCHEMY_DATABASE_URL, echo=True)
