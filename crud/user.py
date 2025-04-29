@@ -40,8 +40,9 @@ def delete_user(db: Session, user_id: str):
     db_user = get_user_by_id(db, user_id)
     if db_user is None:
         return False
-    db.delete(db_user)
+    db_user.estatus = "Suspendido" 
     db.commit()
+    db.refresh(db_user)
     return True
 
 def get_user_by_email(db: Session, email: str):
